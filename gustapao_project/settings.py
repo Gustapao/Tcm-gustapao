@@ -45,7 +45,9 @@ DJANGO_APPS = [
     "django.contrib.staticfiles",
 ]
 
-THIRD_PARTY_APPS = ['rest_framework', 'rest_framework.authtoken', 'drf_spectacular']
+
+THIRD_PARTY_APPS = ['rest_framework', 'rest_framework.authtoken', 'drf_spectacular',]
+
 
 MY_APPS= ['accounts', 'orders', 'products',]
 
@@ -172,4 +174,6 @@ if DATABASE_URL:
         default=DATABASE_URL, conn_max_age=500, ssl_require=True
     )
     DATABASES['default'].update(db_from_env)
+
     DEBUG = False
+
